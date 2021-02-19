@@ -1,0 +1,14 @@
+{
+    "name": "team-builder",
+    "version": "1.0.0",
+    "description": "AS A manager, I WANT to generate a webpage that displays my team's basic info, SO THAT I have quick access to their emails and GitHub profiles",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "author": "Bella Santiago",
+    "license": "ISC",
+    "dependencies": {
+        "inquirer": "^6.5.2"
+    }
+}
