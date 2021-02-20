@@ -152,7 +152,7 @@ function start() {
                 }
             }
         }]).then(answers => {
-            const engineer = new engineer(answers.nameEngineer, answers.idEngineer, answers.emailEngineer, answers.gitEngineer);
+            const engineer = new Engineer(answers.nameEngineer, answers.idEngineer, answers.emailEngineer, answers.gitEngineer);
             teamArray.push(engineer);
             idArray.push(answers.idEngineer);
             newMember();
@@ -219,12 +219,14 @@ function start() {
 
     //Directory for output files
     const DIST_DIR = path.resolve(__dirname, 'dist')
-    const outputPath = path.join('./src/display.js');
+    const outputPath = path.join(DIST_DIR, 'index.html');
+
+    const render = require('./src/display.js');
 
     // After all members have been added, generate HTML file with information
     function generateHTML() {
         console.log("The computer elfs are creating your HTML file..... they like to place it in the dist folder")
-        fs.writeFileSync(outputPath, render(teamArray), "utf-8");
+        fs.writeFileSync(outputPath, render(teamArray));
     }
     manager();
 }

@@ -23,7 +23,9 @@ module.exports = team => {
     </div>
     <div class="container bg-light">
         <div class="row">
-            ${createCard(team)}
+            <div class="col-12 d-flex justify-content-center">
+                ${createCard(team)}
+            <div>
         </div>
     </div>
     </div>
@@ -40,7 +42,7 @@ const createCard = team => {
     const cardManager = manager => {
         return `
         <div class="card">
-                <div class="card-header bg-info text-light text-center ">
+                <div class="card-header bg-primary text-light text-center ">
                     <h2 class="card-title">${manager.getName()}</h2>
                     <h4 class="card-title">${manager.getRole()}</h4>
                 </div>
@@ -51,6 +53,7 @@ const createCard = team => {
                         <li class="list-group-item">Telephone Number: <a href="tel:${manager.getTelephoneNumber()}">${manager.getTelephoneNumber()}</a></li>
                     </ul>
                 </div>
+        </div>
         `;
     };
 
@@ -58,7 +61,7 @@ const createCard = team => {
     const cardEngineer = engineer => {
         return `
         <div class="card">
-                <div class="card-header bg-info text-light text-center ">
+                <div class="card-header bg-primary text-light text-center ">
                     <h2 class="card-title">${engineer.getName()}</h2>
                     <h4 class="card-title">${engineer.getRole()}</h4>
                 </div>
@@ -69,6 +72,7 @@ const createCard = team => {
                         <li class="list-group-item">GitHub Account: <a href="https://github.com/${engineer.getGit()}" target="_blank">${engineer.getGit()}</a></li>
                     </ul>
                 </div>
+            </div>    
         `;
     };
 
@@ -76,7 +80,7 @@ const createCard = team => {
     const cardIntern = intern => {
         return `
         <div class="card">
-                <div class="card-header bg-info text-light text-center ">
+                <div class="card-header bg-primary text-light text-center ">
                     <h2 class="card-title">${intern.getName()}</h2>
                     <h4 class="card-title">${intern.getRole()}</h4>
                 </div>
@@ -87,6 +91,7 @@ const createCard = team => {
                         <li class="list-group-item">School Name: ${intern.getSchool()}</li>
                     </ul>
                 </div>
+            </div>
         `;
     };
 
@@ -103,7 +108,7 @@ const createCard = team => {
     );
     html.push(team
         .filter(employee => employee.getRole() === 'Intern')
-        .map(intern => cardIntern(inter))
+        .map(intern => cardIntern(intern))
         .join("")
     );
 
