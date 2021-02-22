@@ -15,7 +15,7 @@ const teamArray = [];
 const idArray = [];
 
 // A function containing all of the other functions
-function start() {
+// function start() {
     console.log("Let's build your team!")
 
     // First the user is prompted with the questions to add a manager to the team
@@ -159,7 +159,7 @@ function start() {
         })
     }
 
-    // If Inter is selected, run this function
+    // If Intern is selected, run this function
     function addIntern() {
         inquirer.prompt([{
             type: "input",
@@ -229,6 +229,6 @@ function start() {
         fs.writeFileSync(outputPath, render(teamArray));
     }
     manager();
-}
 
-start();
+
+// start();

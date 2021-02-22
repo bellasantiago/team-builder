@@ -49,7 +49,7 @@ const createCard = team => {
                 <div class="card-body bg-light">
                     <ul class="list-group text-dark">
                         <li class="list-group-item">ID Number: ${manager.getId()} </li>
-                        <li class="list-group-item">Email Address: <a href="mailto:${manager.getEmail()}"></a>${manager.getEmail()}</li>
+                        <li class="list-group-item">Email Address: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
                         <li class="list-group-item">Telephone Number: <a href="tel:${manager.getTelephoneNumber()}">${manager.getTelephoneNumber()}</a></li>
                     </ul>
                 </div>
