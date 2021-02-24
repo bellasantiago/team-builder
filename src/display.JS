@@ -68,7 +68,7 @@ const createCard = team => {
                 <div class="card-body bg-light">
                     <ul class="list-group text-dark">
                         <li class="list-group-item">ID Number: ${engineer.getId()} </li>
-                        <li class="list-group-item">Email Address: <a href="mailto:${engineer.getEmail()}"></a>${engineer.getEmail()}</li>
+                        <li class="list-group-item">Email Address: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
                         <li class="list-group-item">GitHub Account: <a href="https://github.com/${engineer.getGit()}" target="_blank">${engineer.getGit()}</a></li>
                     </ul>
                 </div>
@@ -87,7 +87,7 @@ const createCard = team => {
                 <div class="card-body bg-light">
                     <ul class="list-group text-dark">
                         <li class="list-group-item">ID Number: ${intern.getId()} </li>
-                        <li class="list-group-item">Email Address: <a href="mailto:${intern.getEmail()}"></a>${intern.getEmail()}</li>
+                        <li class="list-group-item">Email Address: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></li>
                         <li class="list-group-item">School Name: ${intern.getSchool()}</li>
                     </ul>
                 </div>

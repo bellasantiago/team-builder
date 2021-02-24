@@ -41,7 +41,7 @@ A command line application that will take in user input with their team's basic 
 
   ## Sample🎥
   
-  Here is a walkthrough video of how the application runs. [ClickMe](HTML)
+  Here is a walkthrough video of how the application runs. [ClickMe](https://drive.google.com/file/d/1hqJx87JlPx9REKmTkbLKhKVWtKgS7J5i/view?usp=sharing)
 
   ---
 
